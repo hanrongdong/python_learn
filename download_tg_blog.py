@@ -55,7 +55,7 @@ def download(url_list, title):
         get = requests.get(url)
         response = get.content
         filename = url.split("/")[-1]
-        with open(f"./download_img/{title}/{filename}", "wb+", buffering=2048) as f:
+        with open(f"download_img/{title}/{filename}", "wb+", buffering=2048) as f:
             f.write(response)
 
 
@@ -68,8 +68,7 @@ def run():
     # 列表表达式，把一个大的列表，分割为每5个值一个的列表
     list_5 = [url_list[i:i + num] for i in range(0, len(url_list), num)]
     try:
-        os.mkdir("download_img")
-        os.mkdir("download_img/{}".format(title))
+        os.makedirs("download_img/{}".format(title))
     except Exception:
         print("文件夹存在")
         exit(1)
