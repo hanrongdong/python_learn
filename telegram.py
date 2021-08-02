@@ -2,9 +2,10 @@ from telethon import TelegramClient
 from telethon.tl.types import InputMessagesFilterUrl
 import re
 import download_tg_blog
-
-api_id = 你的id
-api_hash = "你的密钥"
+# api_id 你自己的id
+# api_hash 你自己的密钥
+api_id = 123456
+api_hash = "xxxxxxxxxxxx"
 # 链接服务端
 client = TelegramClient('anon', api_id, api_hash).start()
 
