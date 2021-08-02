@@ -3,8 +3,8 @@ from telethon.tl.types import InputMessagesFilterUrl
 import re
 import download_tg_blog
 
-api_id = 7907595
-api_hash = "17cb117ecb3392a6ec8d79ba5f1031ee"
+api_id = 你的id
+api_hash = "你的密钥"
 # 链接服务端
 client = TelegramClient('anon', api_id, api_hash).start()
 
