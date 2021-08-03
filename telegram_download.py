@@ -7,9 +7,10 @@ from telethon.tl.types import InputMessagesFilterPhotoVideo
 import socks
 import async_timeout
 
+proxy = (socks.SOCKS5, "localhost", 1080)
 api_id = 123456789
 api_hash = "17cbxxxxxxxx6ec8d79ba5f1031ee"
-client = TelegramClient('anon', api_id, api_hash, proxy=(socks.SOCKS5, "localhost", 1080)).start()
+client = TelegramClient('anon', api_id, api_hash, proxy=proxy).start()
 
 
 async def video():
