@@ -1,3 +1,10 @@
+# 需要的依赖
+* telethon
+* pysocks
+* bs4
+* requests
+* async-timeout
+
 # telegram.py and download_tg_blog.py
 1. 首先申请api，api申请地址：https://my.telegram.org/
 2. 然后填入telegram.py的`api_id`和`api_hash`中
