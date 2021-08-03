@@ -16,3 +16,8 @@ messages = await client.get_messages("https://t.me/AnchorPic", None, filter=Inpu
 python3 telegram_download.py i # 下载频道的所有图片
 python3 telegram_download.py v # 下载频道的所有视频
 ```
+4. 如果需要代理，修改proxy中的值,不需要代理就删除proxy这个参数
+```python
+proxy = (socks.SOCKS5, "localhost", 1080) # 改成自己的代理地址
+client = TelegramClient('anon', api_id, api_hash, proxy=proxy).start() # 不需要代理就删除 proxy=proxy
+```
