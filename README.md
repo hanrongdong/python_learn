@@ -4,6 +4,9 @@
 * bs4
 * requests
 * async-timeout
+```shell
+python3 -m pip install -r telethon pysocks bs4 requests async-timeout
+```
 
 # telegram.py and download_tg_blog.py
 1. 首先申请api，api申请地址：https://my.telegram.org/
