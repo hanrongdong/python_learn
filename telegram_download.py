@@ -33,7 +33,7 @@ if sys.argv[1] == "i":
     img_path = "./img"
     os.mkdir("./img")
     with client:
-        client.loop.run_until_complete(video())
+        client.loop.run_until_complete(photo())
 elif sys.argv[1] == "v":
     url = input("输入TG频道的链接：")
     video_path = "./video"
