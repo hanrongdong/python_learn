@@ -9,7 +9,9 @@ messages = await client.get_messages("https://t.me/AnchorPic", None, filter=Inpu
 `python3 ./telegram.py`
 
 # telegram_download.py
-1. 有两个参数：`i` and `v`
+1. 首先申请api，api申请地址：https://my.telegram.org/
+2. 然后填入telegram_download.py的`api_id`和`api_hash`中
+3. 有两个参数：`i` and `v`
 ```python
 python3 telegram_download.py i # 下载频道的所有图片
 python3 telegram_download.py v # 下载频道的所有视频
