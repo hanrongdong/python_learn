@@ -1,4 +1,5 @@
 # 需要的依赖
+基于python3.8
 * telethon
 * pysocks
 * bs4
