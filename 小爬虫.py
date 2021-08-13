@@ -1,8 +1,5 @@
-import os
-import random
-import re
-import bs4
-import requests
+import bs4, requests, os, re, random
+
 
 
 class Parsing:
