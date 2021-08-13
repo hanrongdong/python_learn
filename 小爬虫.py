@@ -49,7 +49,8 @@ def main():
             img_url = x.parsing(url)
             name = bs4.BeautifulSoup(img_url, "html.parser").find("title").string
             jpg_link = x.parsing_img(img_url)
-            path = "/Users/zhoupeng/Downloads/" + name + "/"
+            # 这里的 path 自定义为你自己需要保存的路径
+            path = "/path/" + name + "/"
             try:
                 os.makedirs(path)
             except Exception:
