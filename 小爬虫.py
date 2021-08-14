@@ -54,7 +54,7 @@ def main():
             try:
                 os.makedirs(path)
             except Exception:
-                print("文件存在", end="\r")
+                print("文件存在")
                 continue
             print("开始下载{}".format(name))
             for ii in jpg_link:
